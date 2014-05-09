@@ -1,6 +1,6 @@
 Responsive Email
 ================
-The basic responsive email template.
+The basic "responsive" email template.
 
 ![Simple Template](/images/simple-template.png?raw=true)
 
