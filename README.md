@@ -1,2 +1,2 @@
-responsive-mail
-===============
+Responsive Email
+================
