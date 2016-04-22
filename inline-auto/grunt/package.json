@@ -1,0 +1,23 @@
+{
+  "name": "responsive-email",
+  "version": "1.0.0",
+  "description": "The basic \"responsive\" email template.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordaneCure/responsive-email.git"
+  },
+  "author": "derekpunsalan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordaneCure/responsive-email/issues"
+  },
+  "homepage": "https://github.com/jordaneCure/responsive-email#readme",
+  "devDependencies": {
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-includes": "^0.5.4",
+    "grunt-text-replace": "^0.4.0"
+  }
+}
