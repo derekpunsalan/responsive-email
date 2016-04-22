@@ -8,9 +8,8 @@ The basic "responsive" email template.
 
 ###### Manual
 
-1. Edit file simple.css in /edit-css-manual
-3. Pass through inliner utility like [Inliner by Zurb](http://zurb.com/ink/inliner.php).
-2. In simple.html, remplace css between `<style> </style>` tag by your custom inlined css.
+1. Edit file simple.html in /inline-manual
+2. Pass through inliner utility like [Inliner by Zurb](http://zurb.com/ink/inliner.php).
 
 
 ###### Scss + Grunt
@@ -25,6 +24,6 @@ You must have [Grunt](http://gruntjs.com/getting-started) and [Sass](http://sass
 
 4. Use these command:
 	- Grunt build : Compile, Minify and Include css in simple.html
-	- Grunt watch : A each modification of simple.scss will compile, minify and include css in simple.html
+	- Grunt watch : A each modification of simple.scss will compile, minify and include inline css in simple.html
 
 5. Show result in simple.html
