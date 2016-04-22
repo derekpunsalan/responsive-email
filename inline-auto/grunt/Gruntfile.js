@@ -15,8 +15,8 @@ module.exports = function(grunt) {
 
     replace: {
       scriptInclude: {
-        src: '../../simple.html',              
-        dest: '../../simple.html',             
+        src: '../simple.html',              
+        dest: '../simple.html',             
         replacements: [{
             from: /<style[\s\S]*?>[\s\S]*?<\/style>/gi,
             to: '<style type="text/css"> \n \t\tinclude "simple.css"  \n\t</style>'
@@ -26,13 +26,23 @@ module.exports = function(grunt) {
 
     includes: {
       build: {
-        src: '../../simple.html',
+        src: '../simple.html',
         dest: '../../simple.html',
         flatten: true,
         options: {
           includePath: '..'
         }
       }
+    },
+
+    inlinecss: {
+        main: {
+            options: {
+            },
+            files: {
+                '../../simple.html': '../../simple.html'
+            }
+        }
     },
 
     clean: {
@@ -45,7 +55,7 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['../simple.scss'],
-        tasks: ['sass','replace','includes','clean'],
+        tasks: ['build'],
       },
     },
 
@@ -56,7 +66,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-includes');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-inline-css');
   
-  grunt.registerTask('build', ['sass','replace','includes','clean']);
+  grunt.registerTask('build', ['sass','includes','inlinecss','clean']);
   
 };
