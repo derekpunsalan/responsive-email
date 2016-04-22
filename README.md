@@ -4,14 +4,14 @@ The basic "responsive" email template.
 
 ![Simple Template](/images/simple-template.png?raw=true)
 
-** Edit style - Manual Setup **
+###### Edit style - Manual Setup
 
 1. Edit file simple.css in /edit-css-manual
 3. Pass through inliner utility like [Inliner by Zurb](http://zurb.com/ink/inliner.php).
 2. In simple.html, remplace css between `<style> </style>` tag by your custom inlined css.
 
 
-** Edit style - Grunt Setup **
+###### Edit style - Grunt Setup
 
 You must have [Grunt](http://gruntjs.com/getting-started) and [Sass](http://sass-lang.com/install) instaled in your development environment to use this setup. 
 
