@@ -1,6 +1,6 @@
 Responsive Email
 ================
-The basic "responsive" email template.
+The basic "responsive" email template. This project is licensed under the terms of the MIT license.
 
 ![Simple Template](/images/simple-template.png?raw=true)
 
