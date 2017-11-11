@@ -1,4 +1,5 @@
 $action-color: #71bc37;
+$footer-color: #888;
 
 // Global
 * {
@@ -19,14 +20,16 @@ body,
 .body-wrap {
   width: 100% !important;
   height: 100%;
-  background: #efefef;
-  -webkit-font-smoothing:antialiased;
-  -webkit-text-size-adjust:none;
+  background: #f8f8f8;
 }
 
 a {
   color: $action-color;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .text-center {
@@ -50,6 +53,10 @@ a {
   border-width: 10px 20px 8px;
   font-weight: bold;
   border-radius: 4px;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 // Typography
@@ -112,15 +119,19 @@ p, ul, ol {
 
       p {
         margin-bottom: 0;
-        color: #888;
+        color: $footer-color;
         text-align: center;
         font-size: 14px;
       }
 
       a {
-        color: #888;
+        color: $footer-color;
         text-decoration: none;
         font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
