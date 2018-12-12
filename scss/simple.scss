@@ -1,3 +1,4 @@
+$base-color: #f8f8f8;
 $action-color: #71bc37;
 $footer-color: #888;
 
@@ -20,7 +21,7 @@ body,
 .body-wrap {
   width: 100% !important;
   height: 100%;
-  background: #f8f8f8;
+  background: $base-color;
 }
 
 a {
@@ -100,7 +101,7 @@ p, ul, ol {
 
   .masthead {
     padding: 80px 0;
-    background: #71bc37;
+    background: $action-color;
     color: white;
 
     h1 {
